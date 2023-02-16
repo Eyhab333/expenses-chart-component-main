@@ -1,0 +1,235 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+body {
+  background: #f8e9dd;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*##### for-phone-only ##########*/
+/*############ for-tablet-portrait-up ##############*/
+@media (min-width: 600px) {
+  body {
+    padding-top: 182px;
+  }
+  main {
+    width: 540px;
+    height: 660px;
+    margin-left: 450px;
+  }
+  header {
+    background: #ec755d;
+    border-radius: 20px;
+    width: 540px;
+    padding: 1.6875rem 2.4375rem 1.5625rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .text h1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  .text p {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #fffbf6;
+  }
+  .logo {
+    width: 72px;
+    height: 48px;
+  }
+  section {
+    padding: 2rem 2.46875rem 2.5rem 2.5rem;
+    background: #fffbf6;
+    border-radius: 20px;
+  }
+  section h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #382314;
+    margin-bottom: 18px;
+  }
+  .charts {
+    margin-bottom: 32px;
+    height: 14.125rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bar {
+    width: 4.6875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .amount {
+    background: #382314;
+    border-radius: 5px;
+    width: 3.90625rem;
+    height: 2.5rem;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    color: #fffbf6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: none;
+  }
+  .rectangle {
+    background: #ec755d;
+    border-radius: 5px;
+    width: 3.1475rem;
+    height: 90px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  .rectangle:hover {
+    background: #ff9b86;
+  }
+  .current-day {
+    background: #b4e0e5;
+  }
+  .current-day:hover {
+    background: #b4e0e5;
+  }
+  .day {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #92857a;
+  }
+  .mon {
+    height: 3.125rem;
+  }
+  .tue {
+    height: 6.25rem;
+  }
+  .wed {
+    height: 9.375rem;
+  }
+  .thu {
+    height: 5.5625rem;
+  }
+  .fri {
+    height: 4.1875rem;
+  }
+  .sat {
+    height: 7.75rem;
+  }
+  .sun {
+    height: 4.5625rem;
+  }
+  .show {
+    display: block;
+  }
+  hr {
+    border-top: 1px solid #f8e9dd;
+    border-radius: 1px;
+    margin-bottom: 32px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .left .p1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #92857a;
+  }
+  .left .p2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: #382314;
+  }
+  .right .p1 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    color: #382314;
+  }
+  .right .p2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #92857a;
+  }
+}
+/*############ for-tablet-landscape-up #############*/
+/*############ for-desktop-up ###########*/
+/*############ for-big-desktop-up ##########*//*# sourceMappingURL=style.css.map */

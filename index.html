@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="text">
+          <h1>My balance</h1>
+          <p>$921.48</p>
+        </div>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+      </header>
+      <section>
+        <h2>Spending - Last 7 days</h2>
+        <!-- ================================================== -->
+        <div class="charts">
+          <div class="bar">
+            <div class="amount">17.45</div>
+            <div class="rectangle mon"></div>
+            <p class="day">mon</p>
+          </div>
+          <div class="bar">
+            <div class="amount">34.91</div>
+            <div class="rectangle tue"></div>
+            <p class="day">tue</p>
+          </div>
+          <div class="bar">
+            <div class="amount">$52.36</div>
+            <div class="rectangle wed current-day"></div>
+            <p class="day">wed</p>
+          </div>
+          <div class="bar">
+            <div class="amount">$31.07</div>
+            <div class="rectangle thu"></div>
+            <p class="day">thu</p>
+          </div>
+          <div class="bar">
+            <div class="amount">23.39</div>
+            <div class="rectangle fri"></div>
+            <p class="day">fri</p>
+          </div>
+          <div class="bar">
+            <div class="amount">43.28</div>
+            <div class="rectangle sat"></div>
+            <p class="day">sat</p>
+          </div>
+          <div class="bar">
+            <div class="amount">25.48</div>
+            <div class="rectangle sun"></div>
+            <p class="day">sun</p>
+          </div>
+        </div>
+        <!-- ================================================== -->
+        <hr />
+        <div class="footer">
+          <div class="left">
+            <p class="p1">Total this month</p>
+            <p class="p2">$478.33</p>
+          </div>
+          <div class="right">
+            <p class="p1">+2.4%</p>
+            <p class="p2">from last month</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="height: 180px"></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
