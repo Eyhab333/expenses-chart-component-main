@@ -71,8 +71,185 @@ ul {
   list-style-type: none;
 }
 
+html {
+  transition: all 1s;
+}
 /*##### for-phone-only ##########*/
 @media (max-width: 599px) {
+  body {
+    padding-top: toRem(67);
+  }
+  main {
+    width: 343px;
+    height: 534px;
+    margin: 0 auto;
+  }
+
+  header {
+    background: #ec755d;
+    border-radius: 20px;
+    width: 343px;
+    padding: toRem(20) toRem(24) toRem(22) toRem(20);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .text h1 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+
+  .text p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #fffbf6;
+  }
+
+  .logo {
+    width: 60px;
+    height: 40px;
+  }
+
+  section {
+    padding: toRem(24) toRem(20);
+    background: #fffbf6;
+    border-radius: 20px;
+  }
+
+  section h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.25px;
+    color: #382314;
+    margin-bottom: 18px;
+  }
+  // ======================================================================
+  .charts {
+    margin-bottom: 24px;
+    height: toRem(200);
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s ease-out;
+  }
+
+  .bar {
+    width: toRem(40);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .amount {
+    background: #382314;
+    border-radius: 5px;
+    width: toRem(39);
+    font-weight: 700;
+    font-size: 11px;
+    color: #fffbf6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: toRem(1);
+  }
+
+  .rectangle {
+    background: #ec755d;
+    border-radius: 5px;
+    width: toRem(33);
+    height: 90px;
+    margin-top: toRem(3);
+    margin-bottom: toRem(3);
+    cursor: pointer;
+  }
+
+  .rectangle:hover {
+    background: #ff9b86;
+  }
+
+  .current-day {
+    background: #76B5BC;
+  }
+  .current-day:hover {
+    background: #b4e0e5;
+  }
+
+  .day {
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    color: #92857a;
+  }
+
+  .mon-height {
+    height: toRem(50);
+  }
+  .tue-height {
+    height: toRem(100);
+  }
+  .wed-height {
+    height: toRem(150);
+  }
+  .thu-height {
+    height: toRem(89);
+  }
+  .fri-height {
+    height: toRem(67);
+  }
+  .sat-height {
+    height: toRem(124);
+  }
+  .sun-height {
+    height: toRem(73);
+  }
+
+  .show {
+    display: block;
+  }
+
+  // ================================================================
+  hr {
+    border-top: 1px solid #f8e9dd;
+    border-radius: 1px;
+    margin-bottom: 24px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .left .p1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #92857a;
+  }
+
+  .left .p2 {
+    font-weight: 700;
+    font-size: 38px;
+    color: #382314;
+  }
+
+  .right .p1 {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+    color: #382314;
+  }
+
+  .right .p2 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #92857a;
+  }
 }
 
 /*############ for-tablet-portrait-up ##############*/
@@ -135,6 +312,7 @@ ul {
     height: toRem(226);
     display: flex;
     justify-content: space-between;
+    transition: all 1s ease-out;
   }
 
   .bar {
@@ -149,7 +327,6 @@ ul {
     background: #382314;
     border-radius: 5px;
     width: toRem(62.5);
-    height: toRem(40);
     font-weight: 700;
     font-size: 17px;
     line-height: 23px;
@@ -157,9 +334,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    display: none;
+    padding-top: toRem(4);
+    padding-bottom: toRem(4);
   }
 
   .rectangle {
@@ -177,7 +353,7 @@ ul {
   }
 
   .current-day {
-    background: #b4e0e5;
+    background: #76B5BC;
   }
   .current-day:hover {
     background: #b4e0e5;
@@ -191,25 +367,25 @@ ul {
     color: #92857a;
   }
 
-  .mon {
+  .mon-height {
     height: toRem(50);
   }
-  .tue {
+  .tue-height {
     height: toRem(100);
   }
-  .wed {
+  .wed-height {
     height: toRem(150);
   }
-  .thu {
+  .thu-height {
     height: toRem(89);
   }
-  .fri {
+  .fri-height {
     height: toRem(67);
   }
-  .sat {
+  .sat-height {
     height: toRem(124);
   }
-  .sun {
+  .sun-height {
     height: toRem(73);
   }
 
